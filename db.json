@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": "c5f1",
+      "title": "teste API",
+      "completed": false
+    },
+    {
+      "id": "56fa",
+      "title": "sla",
+      "completed": false
+    },
+    {
+      "id": "9c4d",
+      "title": "ww",
+      "completed": false
+    },
+    {
+      "id": "1109",
+      "title": "cxxcf",
+      "completed": false
+    },
+    {
+      "id": "4d53",
+      "title": "fyuf",
+      "completed": false
+    },
+    {
+      "id": "74f7",
+      "title": "kaue",
+      "completed": false
+    }
+  ]
+}

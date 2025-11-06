@@ -1,0 +1,137 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: dimgrey;
+  padding: 30px;
+  color: white;
+  background-position: center;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.432);
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: darkgreen;
+  color: white;
+  padding: 5 px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  margin-right: 10px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.todo-list {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo {
+  background-color: lightgray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.complete {
+  background-color: rgb(17, 199, 0);
+}
+
+.remove {
+  background-color: darkred;
+}
+
+.todo-form {
+  margin-bottom: 1.5rem;
+}
+input,
+select {
+  padding: 5 px;
+  margin-bottom: 10 px;
+  border: 1 px solid #ccc;
+  border-radius: 5 px;
+  width: 100%;
+}
+
+.app form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app input {
+  padding: 10px;
+}
+
+.app button {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.logout {
+  background-color: #b22222;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: background 0.3s ease;
+}
+
+.logout:hover {
+  background-color: #ff4040;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.footer a {
+  color: #4ad1ff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
