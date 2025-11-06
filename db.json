@@ -1,33 +1,33 @@
 {
   "todos": [
     {
-      "id": "c5f1",
-      "title": "teste API",
+      "id": "b2d3",
+      "title": "arrumar a casa",
+      "category": "Pessoal",
       "completed": false
     },
     {
-      "id": "56fa",
-      "title": "sla",
+      "id": "ffec",
+      "title": "efefe",
+      "category": "Trabalho",
       "completed": false
     },
     {
-      "id": "9c4d",
-      "title": "ww",
+      "id": "d0bb",
+      "title": "ferwfg3r",
+      "category": "Pessoal",
       "completed": false
     },
     {
-      "id": "1109",
-      "title": "cxxcf",
+      "id": "adc6",
+      "title": "g45h",
+      "category": "Trabalho",
       "completed": false
     },
     {
-      "id": "4d53",
-      "title": "fyuf",
-      "completed": false
-    },
-    {
-      "id": "74f7",
-      "title": "kaue",
+      "id": "692a",
+      "title": "gbteqw",
+      "category": "Estudos",
       "completed": false
     }
   ]

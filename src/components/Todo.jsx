@@ -3,12 +3,16 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
   return (
     <div
       className="todo"
-      style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
+      style={{
+        textDecoration: todo.isCompleted ? "line-through" : "",
+        textDecorationColor: todo.isCompleted ? "black" : "",
+      }}
     >
       {" "}
       <div className="content">
         {" "}
-        <p>{todo.text}</p> <p className="category">({todo.category})</p>{" "}
+        <p className="textCard">{todo.text}</p>{" "}
+        <p className="category">({todo.category})</p>{" "}
       </div>{" "}
       <div>
         {" "}

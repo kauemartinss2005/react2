@@ -17,18 +17,25 @@ const TodoForm = ({ addTodo }) => {
         {" "}
         <input
           type="text"
-          placeholder="digite o titulo"
+          placeholder="Nova tarefa..."
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />{" "}
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
+        <select
+          className="selectCategoty"
+          placeholder="Categoria"
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+        >
           {" "}
-          <option value="">Selecione uma categoria</option>{" "}
+          <option value="Outro">Outro</option>{" "}
           <option value="Trabalho">Trabalho</option>{" "}
           <option value="Pessoal">Pessoal</option>{" "}
           <option value="Estudos">Estudos</option>{" "}
         </select>{" "}
-        <button type="submit">Criar tarefa</button>{" "}
+        <button className="enviar" type="submit">
+          Criar
+        </button>{" "}
       </form>{" "}
     </div>
   );

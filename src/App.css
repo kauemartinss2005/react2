@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
 body {
-  font-family: "Times New Roman", Times, serif;
-  background-color: dimgrey;
+  font-family: "Raleway", sans-serif;
+  background: radial-gradient(
+    circle at center,
+    #000000,
+    #dcdcdc,
+    #000000,
+    #e5e5e5
+  );
+
   padding: 30px;
   color: white;
   background-position: center;
@@ -10,31 +19,46 @@ body {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.432);
+  background: radial-gradient(
+    circle,
+    #f8f8f8 0%,
+    #dddddd 45%,
+    #f1f1f1 80%,
+    #c7c7c7 100%
+  );
+
   padding: 20px 30px;
   border-radius: 20px;
 }
 
 h1 {
   text-align: center;
+  color: black;
 }
 
 h2 {
   margin-bottom: 10px;
+  color: black;
 }
 
 input {
   box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 p {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 15px;
+  color: black;
+  font-family: sans-serif;
 }
 
 button {
-  background-color: darkgreen;
   color: white;
   padding: 5 px 10px;
   border: none;
@@ -46,17 +70,17 @@ button {
 }
 
 button:hover {
-  opacity: 1;
+  opacity: 2;
 }
 
 .todo-list {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #000000;
 }
 
 .todo {
-  background-color: lightgray;
+  background-color: rgba(0, 0, 0, 0.212);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 15px;
   margin-bottom: 10px;
@@ -64,24 +88,38 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: #0000004b 1px solid;
 }
 
 .complete {
-  background-color: rgb(17, 199, 0);
+  background-color: #0000008c;
 }
 
 .remove {
-  background-color: darkred;
+  background-color: #0000008c;
+}
+
+.complete:hover {
+  background-color: rgba(31, 184, 11, 0.89);
+
+  filter: brightness(1.1);
+}
+
+.remove:hover {
+  background-color: red;
+
+  filter: brightness(1.1);
 }
 
 .todo-form {
   margin-bottom: 1.5rem;
 }
+
 input,
 select {
   padding: 5 px;
   margin-bottom: 10 px;
-  border: 1 px solid #ccc;
+  border: 1 px solid #a59f9f;
   border-radius: 5 px;
   width: 100%;
 }
@@ -94,6 +132,13 @@ select {
 
 .app input {
   padding: 10px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #b6a9a9,
+    #ebe0e0,
+    #d6d6d6,
+    #b4adad
+  );
 }
 
 .app button {
@@ -102,8 +147,15 @@ select {
 }
 
 .logout {
-  background-color: #b22222;
-  color: white;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #f9f9f9,
+    #eaeaea,
+    #d6d6d6,
+    #f0f0f0
+  );
+
+  color: rgba(75, 75, 75, 0.74);
   padding: 8px 14px;
   border: none;
   border-radius: 6px;
@@ -114,7 +166,7 @@ select {
 }
 
 .logout:hover {
-  background-color: #ff4040;
+  background-color: #362b2bab;
 }
 
 .footer {
@@ -134,4 +186,51 @@ select {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.enviar {
+  background-color: #0000008c;
+}
+
+.enviar:hover {
+  background-color: #474747;
+}
+
+.entrarLogin {
+  background-color: #0000008c;
+  width: 100%;
+}
+
+.textCard {
+  color: rgb(0, 0, 0);
+  font-family: "Raleway", sans-serif;
+}
+
+.selectCategoty {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #f9f9f9,
+    #eaeaea,
+    #d6d6d6,
+    #f0f0f0
+  );
+}
+
+.load-btn {
+  background-color: #0000008c;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.load-btn:hover {
+  background-color: #474747;
 }

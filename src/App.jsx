@@ -19,29 +19,26 @@ function App() {
     }
   }, [navigate]);
 
-  useEffect(() => {
-    async function carregarTarefas() {
-      try {
-        const response = await api.get("/todos?_limit=5");
-        const tarefas = response.data.map((tarefa) => ({
-          id: tarefa.id,
-          text: tarefa.title,
-          category: "API",
-          isCompleted: tarefa.completed,
-        }));
-        setTodos(tarefas);
-      } catch (error) {
-        console.error("Erro ao carregar tarefas:", error);
-      }
+  const carregarTarefas = async () => {
+    try {
+      const response = await api.get("/todos");
+      const tarefas = response.data.map((tarefa) => ({
+        id: tarefa.id,
+        text: tarefa.title,
+        category: tarefa.category || "Outro",
+        isCompleted: tarefa.completed,
+      }));
+      setTodos(tarefas);
+    } catch (error) {
+      console.error("Erro ao carregar tarefas:", error);
     }
-
-    carregarTarefas();
-  }, []);
+  };
 
   const addTodo = async (text, category) => {
     try {
       const response = await api.post("/todos", {
         title: text,
+        category,
         completed: false,
       });
 
@@ -93,7 +90,12 @@ function App() {
 
               <Search search={search} setSearch={setSearch} />
 
+              <button onClick={carregarTarefas} className="load-btn">
+                Carregar tarefas da API
+              </button>
+
               <div className="todo-list">
+                {todos.length === 0 && <p>Nenhuma tarefa carregada.</p>}
                 {todos
                   .filter((todo) =>
                     todo.text.toLowerCase().includes(search.toLowerCase())
@@ -114,7 +116,6 @@ function App() {
         />
       </Routes>
 
-      {/* ✅ Footer global */}
       <footer className="footer">
         © {new Date().getFullYear()} Kauê Matriz —{" "}
         <a href="https://www.seusite.com" target="_blank" rel="noreferrer">
